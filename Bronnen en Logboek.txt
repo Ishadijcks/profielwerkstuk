@@ -1,0 +1,16 @@
+http://stackoverflow.com/questions/14460231/how-do-you-import-multiple-javascript-files-in-html-without-the-bloat
+http://www.youtube.com/watch?v=hvOqlCha1SQ
+http://jqueryui.com/accordion/#default
+http://www.youtube.com/watch?v=uHixbmuVfak
+Bronnen om accordion te kunnen maken
+
+
+5-12-2013 -> vanaf 10:50 t/m 12:30 aan de lay-out gewerkt en ook geprobeerd accordion te kunnen maken. Dat is gelukt alleen moet het er nog grafisch mooi uitzien.
+
+
+http://www.colorzilla.com/gradient-editor/
+http://www.colorpicker.com/
+http://www.handleidinghtml.nl/html/karakters/karakters03.html
+Vormgeving en kleuren
+
+6-12-2013 -> vanaf 11:30 t/m 13:15 gewerkt aan accordion en kleuren aangepast. Ook de namen van aandelen en bedrijven verzonnen. Ook met Leon gepraat over hoe of wat ons plan is.

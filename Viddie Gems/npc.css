@@ -1,0 +1,74 @@
+
+.animate {
+		
+	-webkit-animation: play_npc 8s steps(4) infinite;
+       -moz-animation: play_npc 8s steps(4) infinite;
+        -ms-animation: play_npc 8s steps(4) infinite;
+         -o-animation: play_npc 8s steps(4) infinite;
+            animation: play_npc 8s steps(4) infinite;
+}
+
+.jenny {
+	background-image:url(jenny_sprite.png);
+	background-position: -32px 0px;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	z-index: 1;
+
+		
+}
+.jenny.spokenright {
+	background-position: -32px 0px;
+}
+
+@-webkit-keyframes play_npc {
+   from { background-position:    -32px 0px; }
+     to { background-position: -32px -128px; }
+}
+
+@-moz-keyframes play_npc {
+   from { background-position:    -32px 0px; }
+     to { background-position: -32px -128px; }
+}
+
+@-ms-keyframes play_npc {
+   from { background-position:    -32px 0px; }
+     to { background-position: -32px -128px; }
+}
+
+@-o-keyframes play_npc {
+   from { background-position:    -32px 0px; }
+     to { background-position: -32px -128px; }
+}
+
+@keyframes play_npc {
+   from { background-position:    -32px 0px; }
+     to { background-position: -32px -128px; }
+}
+
+
+.henk {
+	background-image:url(henk_sprite.png);
+	background-position: -32px 0px;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	z-index: 1;
+	
+		
+}
+
+
+
+.ufrik {
+	background-image:url(ufrik_sprite.png);
+	background-position: -32px 0px;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	z-index: 1;
+		
+}
+
+

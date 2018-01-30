@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	
+<title>Aandelenbeurs</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+<link rel="stylesheet" type="text/css" href="stylesheet_aandelen.css"/>
+<script src="jquery-1.10.2.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="nieuwsberichten.js"></script>
+	<link href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+
+
+   </head>
+   
+<body >
+
+<div id="mainframe">
+<div id="rechts">
+
+			<div id="aandeel_koop_verkoop">
+            <div id="koop_verkoop_header"><p><strong>Interactie</strong></p></div>
+				<div id="gecentreerd">
+                            <div id="blabla"><strong>
+                            <p class="aandeeltext">&nbsp;&nbsp;&nbsp;<u>Bank:</u> </p>
+                            <p class="aandeeltext">&nbsp;&nbsp;&nbsp;<u>Huidige koers:</u> </p>
+                            <p class="aandeeltext">&nbsp;&nbsp;&nbsp;<u>Aantal aandelen:</u> </p>
+                            <p class="aandeeltext">&nbsp;&nbsp;&nbsp;<u>Gemiddelde koopprijs:</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            <p class="aandeeltext">&nbsp;&nbsp;&nbsp;<u><span id="b_winstt"></span></u></p></strong>
+                            </div>
+            
+                        <p class="1 a aandeeltext" id="aandeeltext1"></p>
+                        <p class="2 a aandeeltext" id="aandeeltext2"></p>
+                        <p class="3 a aandeeltext" id="aandeeltext3"></p>
+                        <p class="4 a aandeeltext" id="aandeeltext4"></p>
+                        <p class="5 a aandeeltext" id="aandeeltext5"></p>
+                        <p class="6 a aandeeltext" id="aandeeltext6"></p>
+                        <p class="7 a aandeeltext" id="aandeeltext7"></p>
+                        <p class="8 a aandeeltext" id="aandeeltext8"></p>
+                        <p class="9 a aandeeltext" id="aandeeltext9"></p>
+                        <p class="10 a aandeeltext" id="aandeeltext10"></p>
+                        <p class="11 a aandeeltext" id="aandeeltext11"></p>
+                        <p class="12 a aandeeltext" id="aandeeltext12"></p>
+                        <p class="13 a aandeeltext" id="aandeeltext13"></p>
+                        <p class="14 a aandeeltext" id="aandeeltext14"></p>
+                        <p class="15 a aandeeltext" id="aandeeltext15"></p>
+                        <p class="16 a aandeeltext" id="aandeeltext16"></p>
+                        
+                        
+                        <button data-type="1" id="1buy" class="a_button buy 1 a">Koop</button>
+                        <button data-type="1" id="1sell" class="a_button sell 1 a">Verkoop</button>
+                        <button data-type="2" id="2buy" class="a_button buy 2 a">Koop</button>
+                        <button data-type="2" id="2sell" class="a_button sell 2 a">Verkoop</button>
+                        <button data-type="3" id="3buy" class="a_button buy 3 a">Koop</button>
+                        <button data-type="3" id="3sell" class="a_button sell 3 a">Verkoop</button>
+                        <button data-type="4" id="4buy" class="a_button buy 4 a">Koop</button>
+                        <button data-type="4" id="4sell" class="a_button sell 4 a">Verkoop</button>
+                        <button data-type="5" id="5buy" class="a_button buy 5 a">Koop</button>
+                        <button data-type="5" id="5sell" class="a_button sell 5 a">Verkoop</button>
+                        <button data-type="6" id="6buy" class="a_button buy 6 a">Koop</button>
+                        <button data-type="6" id="6sell" class="a_button sell 6 a">Verkoop</button>
+                        <button data-type="7" id="7buy" class="a_button buy 7 a">Koop</button>
+                        <button data-type="7" id="7sell" class="a_button sell 7 a">Verkoop</button>
+                        <button data-type="8" id="8buy" class="a_button buy 8 a">Koop</button>
+                        <button data-type="8" id="8sell" class="a_button sell 8 a">Verkoop</button>
+                        <button data-type="9" id="9buy" class="a_button buy 9 a">Koop</button>
+                        <button data-type="9" id="9sell" class="a_button sell 9 a">Verkoop</button>
+                        <button data-type="10" id="10buy" class="a_button buy 10 a">Koop</button>
+                        <button data-type="10" id="10sell" class="a_button sell 10 a">Verkoop</button>
+                        <button data-type="11" id="11buy" class="a_button buy 11 a">Koop</button>
+                        <button data-type="11" id="11sell" class="a_button sell 11 a">Verkoop</button>
+                        <button data-type="12" id="12buy" class="a_button buy 12 a">Koop</button>
+                        <button data-type="12" id="12sell" class="a_button sell 12 a">Verkoop</button>
+                        <button data-type="13" id="13buy" class="a_button buy 13 a">Koop</button>
+                        <button data-type="13" id="13sell" class="a_button sell 13 a">Verkoop</button>
+                        <button data-type="14" id="14buy" class="a_button buy 14 a">Koop</button>
+                        <button data-type="14" id="14sell" class="a_button sell 14 a">Verkoop</button>
+                        <button data-type="15" id="15buy" class="a_button buy 15 a">Koop</button>
+                        <button data-type="15" id="15sell" class="a_button sell 15 a">Verkoop</button>
+                        <button data-type="16" id="16buy" class="a_button buy 16 a">Koop</button>
+                        <button data-type="16" id="16sell" class="a_button sell 16 a">Verkoop</button>
+                     </div>
+			</div>
+
+		<div id="aandeel_summary_canvas">
+		<div id="aandeel_summary">
+        
+        <div id="headers">
+		<h3>Winkel</h3>
+		</div>
+        <div class="container" id="shop">
+        <table id="shop_table" cellpadding="0" cellspacing="0">
+            <tr>
+                <td><div class="voorwerp border" id="nieuwsUpgrade"><span id="upgrade1" class="voorwerp_text">Koop</span></div></td>
+                <td><div class="voorwerp border" id="schaalUpgrade"><span id="upgrade2" class="voorwerp_text">Koop</span></div></td>
+                <td><div class="voorwerp border" id="naamUpgrade"><span  id="upgrade3" class="voorwerp_text">Koop</span></div></td>
+                <td><div class="voorwerp border" id="alertUpgrade"><span  id="upgrade4" class="voorwerp_text">Koop</span></div></td>
+            </tr>
+            <tr>
+                <td class="border eerste"><span class="shop_text"><strong>Item: </strong><br />Color Change<br /><strong><br />Details: </strong><br />Nieuwsberichten hebben een andere kleur<br /><br /><br /><strong>Kost: </strong>&nbsp;1000</span></td>
+                <td class="border"><span class="shop_text"><strong>Item: </strong><br />Schaalverdeling<br /><strong><br />Details: </strong><br />Een schaalverdeling voor de grafiek<br /><br /><br /><strong>Kost: </strong>&nbsp;2500</span></td>
+                <td class="border"><span class="shop_text"><strong>Item: </strong><br />Namechange<br /><strong><br />Details: </strong><br />Verander je naam<br /><br /><br /><br /><strong>Kost: </strong>&nbsp;500</span></td>
+                <td class="border"><span class="shop_text"><strong>Item: </strong><br />Alert Notification<br /><strong><br />Details: </strong><br />Vanaf nu zullen alerts worden getriggerd als de prijs boven de gemiddelde koopprijs ligt<br /><strong>Kost: </strong>&nbsp;15000</span></td>
+            </tr>
+            <tr>
+                <td><div class="voorwerp border" id="avatarUpgrade"><span  id="upgrade5" class="voorwerp_text">Koop</span></div></td>
+                <td><div class="voorwerp border" id="koersUpgrade"><span id="upgrade6" class="voorwerp_text">Koop</span></div></td>
+                <td class="border"><div class="voorwerp" id="schaalUpgrade"></div></td>
+                <td class="border"><div class="voorwerp" id="schaalUpgrade"></div></td>
+            </tr>
+            <tr>
+                <td class="border border_bottom eerste"><span class="shop_text"><strong>Item: </strong><br />Avatar Change<br /><strong><br />Details: </strong><br />Je avatar kan verandert worden door te klikken op de knop links onder de resetknop<br /><br /><br /><strong>Kost: </strong>&nbsp;5000</span></td>
+                <td class="border border_bottom"><span class="shop_text"><strong>Item: </strong><br />Koers kleur<br /><strong><br />Details: </strong><br />De koers wordt aangegeven met kleuren<br /><br /><br /><br /><br /><strong>Kost: </strong>&nbsp;5000</span></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        </div>
+        
+           <!-- <div id="shop">
+        <a title="Nieuwsberichten hebben een andere kleur (1000)"><div class="voorwerp" id="nieuwsUpgrade"><span class="shop_text">Nieuwsberichten hebben een andere kleur (1000)</span></div></a><br />
+        <a title="Een schaalverdeling voor de grafiek (2500)"><div class="voorwerp" id="schaalUpgrade"></div></a><br />
+        <a title="Verander je naam (500)"><div class="voorwerp" id="naamUpgrade"></div></a><br />
+        <a title="Het koersoverzicht laat zien of de prijzen dalen of stijgen door middel van kleuren (5000)"><div class="voorwerp" id="koersUpgrade"></div></a><br />
+        <a title="Vanaf nu zullen alerts worden getriggerd als de prijs boven de gemiddelde koopprijs ligt (15000)"><div class="voorwerp" id="alertUpgrade"></div></a>
+ 
+       
+        </div>-->
+        
+        </div>
+			
+		<div id="canvas">
+		<div id="headerss">
+		<h3 class="1 a">Pear</h3>
+		<h3 class="2 a">Follops</h3>
+		<h3 class="3 a">Swamson</h3>
+		<h3 class="4 a">Huhawaii</h3>
+		<h3 class="5 a">Nice</h3>
+		<h3 class="6 a">Adidos</h3>
+		<h3 class="7 a">Slowgold</h3>
+		<h3 class="8 a">Otter</h3>
+		<h3 class="9 a">Tante Bep's</h3>
+		<h3 class="10 a">Voor den Havik</h3>
+		<h3 class="11 a">AFT</h3>
+		<h3 class="12 a">Neeplus</h3>
+		<h3 class="13 a">K&M</h3>
+		<h3 class="14 a">Landvrouw</h3>
+		<h3 class="15 a">Hot Dog</h3>
+		<h3 class="16 a">Ans&#178;</h3>
+        
+		</div>
+        
+		<div id="canvas_scale">
+        
+		<canvas class="canvas 1 a" id="canvas1"></canvas>		
+		<canvas class="canvas 2 a" id="canvas2"></canvas>
+		<canvas class="canvas 3 a" id="canvas3"></canvas>		
+		<canvas class="canvas 4 a" id="canvas4"></canvas>
+		<canvas class="canvas 5 a" id="canvas5"></canvas>		
+		<canvas class="canvas 6 a" id="canvas6"></canvas>
+		<canvas class="canvas 7 a" id="canvas7"></canvas>		
+		<canvas class="canvas 8 a" id="canvas8"></canvas>
+		<canvas class="canvas 9 a" id="canvas9"></canvas>		
+		<canvas class="canvas 10 a" id="canvas10"></canvas>
+		<canvas class="canvas 11 a" id="canvas11"></canvas>		
+		<canvas class="canvas 12 a" id="canvas12"></canvas>
+		<canvas class="canvas 13 a" id="canvas13"></canvas>		
+		<canvas class="canvas 14 a" id="canvas14"></canvas>
+		<canvas class="canvas 15 a" id="canvas15"></canvas>		
+		<canvas class="canvas 16 a" id="canvas16"></canvas>
+        <div class="scale 1 a" id="scalel1"></div>
+        <div class="scale 2 a" id="scalel2"></div>
+        <div class="scale 3 a" id="scalel3"></div>
+        <div class="scale 4 a" id="scalel4"></div>
+        <div class="scale 5 a" id="scalel5"></div>
+        <div class="scale 6 a" id="scalel6"></div>
+        <div class="scale 7 a" id="scalel7"></div>
+        <div class="scale 8 a" id="scalel8"></div>
+        <div class="scale 9 a" id="scalel9"></div>
+        <div class="scale 10 a" id="scalel10"></div>
+        <div class="scale 11 a" id="scalel11"></div>
+        <div class="scale 12 a" id="scalel12"></div>
+        <div class="scale 13 a" id="scalel13"></div>
+        <div class="scale 14 a" id="scalel14"></div>
+        <div class="scale 15 a" id="scalel15"></div>
+        <div class="scale 16 a" id="scalel16"></div>
+		</div>
+        <div id="logos">
+		<img id="peer" class="1 a" src="logos/pear.png" width=104px height=180px></img>
+		<p id="follops_image" class="2 a">Follops</p>
+		<img id="swamson_image" class="3 a" src="logos/swamson.png" width=286px height=120px></img>
+		<img id="huhawaii_image" class="4 a" src="logos/huhawaii.png" width=204px height=205.25px></img>
+		<img id="nice_image" class="5 a" src="logos/nice.png" width=250px height=121.5px></img>
+		<img id="adidos_image" class="6 a" src="logos/adidos.png" width=240px height=160px></img>
+		<img id="slowgold_image" class="7 a" src="logos/slowgold.png" width=300px height=200px></img>
+		<img id="slowgold_image" class="8 a" src="logos/otter.png" width=300px height=200px></img>
+		<img id="slowgold_image" class="9 a" src="logos/tantebeps.png" width=300px height=200px></img>
+		<img id="slowgold_image" class="10 a" src="logos/vdhavik.png" width=300px height=200px></img>
+		<img id="slowgold_image" class="11 a" src="logos/aft.png" width=300px height=200px></img>
+		<img id="slowgold_image" class="12 a" src="logos/neeplus.png" width=300px height=200px></img>
+		<img id="slowgold_image" class="13 a" src="logos/kenm.png" width=240px height=160px></img>
+		<img id="slowgold_image" class="14 a" src="logos/landvrouw.png" width=240px height=160px></img>
+		<img id="slowgold_image" class="15 a" src="logos/hotdog.png" width=240px height=160px></img>
+		<p id="ans_image" class="16 a">ANS&#178;</p>
+		</div>
+		</div>
+	</div>
+
+
+		
+<div id="console_totaal_aandelen">
+	<div id="totaal_aandelen">
+        <table class="CSSTableGenerator" id="tabel">
+        <tr>
+                <td class="bedrijven">Elektronica</td>
+                <td class="bedrijven">Sport</td>
+                <td class="bedrijven">Horeca</td>
+                <td class="bedrijven">Retail</td>
+        </tr>
+        <tr>
+                <td data-type="1" class="aandeelLink" id="aandeel1">Pear</td>
+                <td data-type="5" class="aandeelLink" id="aandeel5">Nice</td>
+                <td data-type="9" class="aandeelLink" id="aandeel9">Tante Beps</td>
+                <td data-type="13" class="aandeelLink" id="aandeel13">K&M</td>
+        </tr>
+        <tr>
+                <td data-type="2" class="aandeelLink" id="aandeel2">Follops</td>
+                <td data-type="6" class="aandeelLink" id="aandeel6">Adidos</td>
+                <td data-type="10" class="aandeelLink" id="aandeel10">V.D. Havik</td>
+                <td data-type="14" class="aandeelLink" id="aandeel14">Landvrouw</td>
+        </tr>
+        <tr>
+                <td data-type="3" class="aandeelLink" id="aandeel3">Swamson</td>
+                <td data-type="7" class="aandeelLink" id="aandeel7">Slowgold</td>
+                <td data-type="11" class="aandeelLink" id="aandeel11">AFT</td>
+                <td data-type="15" class="aandeelLink" id="aandeel15">Hot Dog</td>
+        </tr>
+        <tr>
+                <td data-type="4" class="aandeelLink" id="aandeel4">Huhawaii</td>
+                <td data-type="8" class="aandeelLink" id="aandeel8">Otter</td>
+                <td data-type="12" class="aandeelLink" id="aandeel12">Neeplus</td>
+                <td data-type="16" class="aandeelLink" id="aandeel16">Ans&#178</td>
+        </tr>
+        </table>
+	</div>
+	<div class="container" id="console_log"></div>
+</div>
+	</div>
+<div id="links">
+
+
+	<div id="speler">
+        <div style="display: table; height: 100%; overflow: hidden; float: right; width: 60%;">
+        <div id="speler_specificaties">
+        <p id="boven">Naam:</p>
+        <p><span id="b_winst"></span></p>
+        <p>Jouw bankrekening: <span id="geld"></span></p>
+        <p>Aantal aandelen: <span id="t_aandelen"></span></p>
+		</div>
+        </div>
+        
+        <div id="speler_icon"><img id="verwijder" src="avatar.jpg" class="swag" /><img id="blah" src="#" alt="your image" class="swag" /></div>
+        
+
+
+	</div>
+
+
+<div id="navigator">
+<div>
+<div id="accordion">
+        <h3>Nieuws<img id="alert" src="alert-icon.png" width="19px" height="19px" /></h3>
+        <div id="nieuws_update"></div>
+        <h3 id="elektronica"></h3>
+        <div>
+        <a data-type="1" class="aandeelLink" id="pear" href="#"></a><br/>
+        <a data-type="2" class="aandeelLink" id="follops" href="#"></a> <br/>
+        <a data-type="3" class="aandeelLink" id="swamson" href="#"></a> <br/>
+        <a data-type="4" class="aandeelLink" id="huhawaii" href="#"></a>       
+        </div>
+        <h3 id="sport"></h3>
+        <div>
+        <a data-type="5" class="aandeelLink" id="nice" href="#"></a>    <br/>
+        <a data-type="6" class="aandeelLink" id="adidos" href="#"></a>  <br/>
+        <a data-type="7" class="aandeelLink" id="slowgold" href="#"></a>        <br/>
+        <a data-type="8" class="aandeelLink" id="otter" href="#"></a>  
+        </div>
+        <h3 id="horeca"></h3>
+        <div>
+        <a data-type="9" class="aandeelLink" id="tantebeps" href="#"></a><br/>
+        <a data-type="10" class="aandeelLink" id="voordenhavik" href="#"></a>   <br/>
+        <a data-type="11" class="aandeelLink" id="aft" href="#"></a>    <br/>
+        <a data-type="12" class="aandeelLink" id="neeplus" href="#"></a>       
+        </div>
+        <h3 id="retail"></h3>
+        <div>
+        <a data-type="13" class="aandeelLink" id="kenm" href="#"></a>   <br/>
+        <a data-type="14" class="aandeelLink" id="landvrouw" href="#"></a>      <br/>
+        <a data-type="15" class="aandeelLink" id="hotdog" href="#"></a> <br/>
+        <a data-type="16" class="aandeelLink" id="ans" href="#"></a>   
+        </div>
+       
+
+	
+
+</div>
+</div>
+<button id="reset" class="button">Reset</button>
+<button id="daalkans" class="display" >Daalkans</button>
+<input id="gebeuren" type="text" class="display" name="FirstName" value="">
+<button id="startprijs" class="display">Startprijs</button>
+<input id="gebeeuren" type="text" class="display" name="FirstName" value="">
+<button id="looptijd" class="display">Looptijd</button>
+<button class="displayUnlock" id="knop" style="width:100%;">Verander Avatar</button>   
+    <form id="form1" runat="server">
+        <input class="displayUnlock" type='file' name="file" id="imgInp" />
+        
+    </form>
+<button class="button" style="width:100%;"><a href="index.html">Tutorial overdoen</a></button>
+</div>
+</div>
+
+
+
+</div> 
+</body>
